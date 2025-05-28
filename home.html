@@ -7,6 +7,8 @@
   <title>Mekanika Digital Pratama</title>
   <!-- Linking Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!-- Linking Swiper CSS-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="../styles/home.css">
 </head>
 <body>
@@ -128,51 +130,59 @@
     <section class="products-section">
       <h2 class="section-title">Our Products</h2>
       <div class="section-content">
-        <div class="slider-container">
+        <div class="slider-container swiper">
           <div class="slider-wrapper">
-            <ul class="our-products-list">
-              <li class="our-products">
-                <img src="../images/machine_bridge_logo.png" alt="Machine Bridge" class="machine-bridge-image">
+            <ul class="our-products-list swiper-wrapper">
+              <li class="our-products swiper-slide">
+                <img src="../images/machine_bridge_logo.png" alt="Machine Bridge" class="software-image">
                 <h3 class="name">Machine Bridge</h3>
                 <i class="feedback">Machine Bridge is Apps for Supply data from Machine to your dashboard</i>
               </li>
-              <li class="our-products">
-                <img src="../images/eqc_logo.png" alt="EQC System" class="eqc-system-image">
+              <li class="our-products swiper-slide">
+                <img src="../images/eqc_logo.png" alt="EQC System" class="software-image">
                 <h3 class="name">EQC System</h3>
                 <i class="feedback">Machine Bridge is Apps for Supply data from Machine to your dashboard</i>
               </li>
-              <li class="our-products">
-                <img src="../images/machine_bridge_logo.png" alt="Machine Bridge" class="machine-bridge-image">
+              <li class="our-products swiper-slide">
+                <img src="../images/machine_bridge_logo.png" alt="Machine Bridge" class="software-image">
                 <h3 class="name">Checksheet Online</h3>
                 <i class="feedback">Machine Bridge is Apps for Supply data from Machine to your dashboard</i>
               </li>
-              <li class="our-products">
-                <img src="../images/machine_bridge_logo.png" alt="Machine Bridge" class="machine-bridge-image">
+              <li class="our-products swiper-slide">
+                <img src="../images/machine_bridge_logo.png" alt="Machine Bridge" class="software-image">
                 <h3 class="name">Tool Management System</h3>
                 <i class="feedback">Machine Bridge is Apps for Supply data from Machine to your dashboard</i>
               </li>
-              <li class="our-products">
-                <img src="../images/machine_bridge_logo.png" alt="Machine Bridge" class="machine-bridge-image">
+              <li class="our-products swiper-slide">
+                <img src="../images/machine_bridge_logo.png" alt="Machine Bridge" class="software-image">
                 <h3 class="name">Factory Insight</h3>
                 <i class="feedback">Machine Bridge is Apps for Supply data from Machine to your dashboard</i>
               </li>
-              <li class="our-products">
-                <img src="../images/machine_bridge_logo.png" alt="Machine Bridge" class="machine-bridge-image">
+              <li class="our-products swiper-slide">
+                <img src="../images/machine_bridge_logo.png" alt="Machine Bridge" class="software-image">
                 <h3 class="name">Machine Health</h3>
                 <i class="feedback">Machine Bridge is Apps for Supply data from Machine to your dashboard</i>
               </li>
-              <li class="our-products">
-                <img src="../images/machine_bridge_logo.png" alt="Emaintenance" class="emaintenance-image">
+              <li class="our-products swiper-slide">
+                <img src="../images/machine_bridge_logo.png" alt="Emaintenance" class="software-image">
                 <h3 class="name">E-Maintenance</h3>
                 <i class="feedback">Machine Bridge is Apps for Supply data from Machine to your dashboard</i>
               </li>
             </ul>
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- Linking Swiper script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Linking Custom script -->
   <script src="../scripts/home.js"></script>
 </body>
 </html>
