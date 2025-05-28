@@ -1,10 +1,10 @@
-// Swiper
-var swiper = new Swiper(".home", {
-      spaceBetween: 30,
-      centeredSlides: true,
+const menuOpenButton = document.querySelector("#menu-open-button")
+const menuCloseButton = document.querySelector("#menu-close-button")
 
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
+menuOpenButton.addEventListener("click", () => {
+  // Toggle mobile menu vibility
+  document.body.classList.toggle("show-mobile-menu");
+});
+
+// Close menu when the close button is clicked
+menuCloseButton.addEventListener("click", () => menuOpenButton.click());

@@ -1,406 +1,178 @@
 <!DOCTYPE html>
+<!-- Code by Rama - Mekanika Digital Pratama -->
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Arrow Forward -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
-    <title>Mekanika Digital Pratama</title>
-    <!--Link to CSS-->
-    <link rel="stylesheet" href="../styles/home.css">
-    <!--Box Icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <!-- glider CSS -->
-    <link rel="stylesheet" href="../styles/glider.min.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mekanika Digital Pratama</title>
+  <!-- Linking Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="../styles/home.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <header>
-        <div class="logo"><a href="#"><img src="../images/logo.png"></a>
-         <div class="title"><a href="#"><img src="../images/slogan.svg"></a>
+  <!-- Header / Navbar -->
+  <header>
+    <nav class="navbar section-content">
+      <a href="#" class="nav-logo">
+        <h2 class="logo-text">MEKANIKA DIGITAL PRATAMA</h2>
+      </a>
+      <ul class="nav-menu">
+        <button id="menu-close-button" class="fas fa-times"></button>
 
-        <!--Nav List -->
-        <div class="navbar">
-            <ul>
-                 <li><a href="home" class="home-active">Home</a></li>
-                 <li><a href="about">About</a></li>
-                <li><a href="products">Product</a></li>
-                 <li><a href="industry">Industry</a></li>
-                 <li><a href="office">Office</a></li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Our Products</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Industries</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Contact</a>
+        </li>
+      </ul>
+
+      <button id="menu-open-button" class="fas fa-bars"></button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="section-content">
+        <div class="hero-details">
+          <h5 class="title">PT MEKANIKA DIGITAL PRATAMA</h5>
+          <h1 class="subtitle">We Digitize Things!</h1>
+          <p class="description">Mekanika Digital Pratama has proven its role as a trusted and experienced
+          software and hardware provider both in Indonesia and abroad.
+          This success is inseparable from our perseverance in building and developing
+          the industry in Indonesia.</p>
+
+          <div class="buttons">
+            <a href="#" class="button check-products">Check Product</a>
+            <a href="#" class="button contact-us">Contact Us</a>
+          </div>
+        </div>
+        <div class="hero-image-wrapper">
+          <img src="../images/logo.png" alt="Hero" class="hero-image">
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+      <div class="section-content">
+        <div class="about-image-wrapper">
+          <img src="../images/loyal.svg" alt="About" class="about-image">
+        </div>
+        <div class="about-details">
+          <h2 class="section-title">About Mekanika Digital Pratama</h2>
+          <p class="text">Mekanika Digital Pratama has proven its role as a trusted and experienced
+          software and hardware provider both in Indonesia and abroad.
+          This success is inseparable from our perseverance in building and developing
+          the industry in Indonesia.
+        </p>
+        <div class="social-link-list">
+          <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Digitize Section -->
+    <section class="digitize-section">
+      <h2 class="section-title">About Work</h2>
+      <div class="section-content">
+        <ul class="digitize-list">
+          <li class="digitize-item">
+            <img src="../images/customer-loyalty.png" alt="Loyalty" class="digitize-image">
+            <h3 class="name">Loyalty</h3>
+            <p class="text">We Loyal to All Customers.</p>
+          </li>
+          <li class="digitize-item">
+            <img src="../images/power.png" alt="Powerfull Team" class="digitize-image">
+            <h3 class="name">Powerfull Team</h3>
+            <p class="text">We Loyal to All Customers.</p>
+          </li>
+          <li class="digitize-item">
+            <img src="../images/dependable.png" alt="Reliable" class="digitize-image">
+            <h3 class="name">Reliable</h3>
+            <p class="text">We Loyal to All Customers.</p>
+          </li>
+          <li class="digitize-item">
+            <img src="../images/idea (6).png" alt="Innovation" class="digitize-image">
+            <h3 class="name">Innovation</h3>
+            <p class="text">We Loyal to All Customers.</p>
+          </li>
+          <li class="digitize-item">
+            <img src="../images/objective.png" alt="On Target" class="digitize-image">
+            <h3 class="name">On Target</h3>
+            <p class="text">We Loyal to All Customers.</p>
+          </li>
+          <li class="digitize-item">
+            <img src="../images/feedback.png" alt="Good Response" class="digitize-image">
+            <h3 class="name">Good Response</h3>
+            <p class="text">We Loyal to All Customers.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Our Products Section -->
+    <section class="products-section">
+      <h2 class="section-title">Our Products</h2>
+      <div class="section-content">
+        <div class="slider-container">
+          <div class="slider-wrapper">
+            <ul class="our-products-list">
+              <li class="our-products">
+                <img src="../images/machine_bridge_logo.png" alt="Machine Bridge" class="machine-bridge-image">
+                <h3 class="name">Machine Bridge</h3>
+                <i class="feedback">Machine Bridge is Apps for Supply data from Machine to your dashboard</i>
+              </li>
+              <li class="our-products">
+                <img src="../images/eqc_logo.png" alt="EQC System" class="eqc-system-image">
+                <h3 class="name">EQC System</h3>
+                <i class="feedback">Machine Bridge is Apps for Supply data from Machine to your dashboard</i>
+              </li>
+              <li class="our-products">
+                <img src="../images/machine_bridge_logo.png" alt="Machine Bridge" class="machine-bridge-image">
+                <h3 class="name">Checksheet Online</h3>
+                <i class="feedback">Machine Bridge is Apps for Supply data from Machine to your dashboard</i>
+              </li>
+              <li class="our-products">
+                <img src="../images/machine_bridge_logo.png" alt="Machine Bridge" class="machine-bridge-image">
+                <h3 class="name">Tool Management System</h3>
+                <i class="feedback">Machine Bridge is Apps for Supply data from Machine to your dashboard</i>
+              </li>
+              <li class="our-products">
+                <img src="../images/machine_bridge_logo.png" alt="Machine Bridge" class="machine-bridge-image">
+                <h3 class="name">Factory Insight</h3>
+                <i class="feedback">Machine Bridge is Apps for Supply data from Machine to your dashboard</i>
+              </li>
+              <li class="our-products">
+                <img src="../images/machine_bridge_logo.png" alt="Machine Bridge" class="machine-bridge-image">
+                <h3 class="name">Machine Health</h3>
+                <i class="feedback">Machine Bridge is Apps for Supply data from Machine to your dashboard</i>
+              </li>
+              <li class="our-products">
+                <img src="../images/machine_bridge_logo.png" alt="Emaintenance" class="emaintenance-image">
+                <h3 class="name">E-Maintenance</h3>
+                <i class="feedback">Machine Bridge is Apps for Supply data from Machine to your dashboard</i>
+              </li>
             </ul>
+          </div>
         </div>
-
-    </header>
-
-    <!-- Home -->
-    <section class="home swiper" id="home">
-        <div class="swiper-wrapper">
-            <!--Slide 1-->
-            <div class="swiper-slide container">
-                <div class="home-text">
-                    <span></span>
-                    <h1></h1>
-                    <a href="#" class="btn">Contact Us <i class="bx bx=right-arrow-alt"></i></a>
-                </div>
-                <img src="../images/carousel.svg" alt="">
-            </div>
-
-        </div>
-             <div class="swiper-button-next"></div>
-             <div class="swiper-button-prev"></div>
-         </div>
+      </div>
     </section>
-    
-    <!-- Categories -->
-    <section class="categories" id="categories">
-        <div class="heading">
-            <h1></h1>
-            <a href=""></a>
-        </div>
-    </section>
+  </main>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!--Link To JS-->
-    <script src="home.js">
-
-    </script>
-
-    <!--Image Galery-->
-     <div class="gallery-container">
-        <div class="gallery-header">
-        <img src="../images/loyal.svg" alt="">
-    </div>
-
-    <!-- Slider -->
-     <section class="p-slider">
-
-        <!-- Heading Slider -->
-         <h3 class="product-slider-heading">Our Products</h3>
-
-         <!-- Btns Next Prev -->
-          <div class="slider-btns">
-            <button aria-label="Previous" class="glider-prev">
-                <span>
-
-                </span>
-            </button>
-            <button aria-label="Next" class="glider-next">
-                <span>
-
-                </span>
-            </button>
-          </div>
-
-         <div class="glider-contain">
-            <div class="glider">
-
-          <!-- Slider 1 -->
-            
-                <!-- Product-Box-->
-          <div class="product-box">
-
-            <!-- Image Container -->
-             <div class="p-img-container">
-                <div class="p-img">
-                    <a href="#">
-                        <img src="../images/machine_bridge_logo.png" class="p-img-front" alt="Front">
-                        <img src="../images/machine_bridge_logo.png" class="p-img-back" alt="Back">
-                    </a>
-                </div>
-             </div>
-
-             <!-- Text -->
-              <div class="p-box-text">
-
-                <!-- Category -->
-                 <div class="product-category">
-                    <span>Machine Bridge</span>
-                 </div>
-
-                 <!-- Title -->
-                  <a href="#" class="product-title">
-                    Machine Bridge is Apps for Supply data from Machine to your dashboard
-                  </a>
-
-                  <!-- Button See -->
-                   <div class="see-more">
-                    <a href="#" class="p-see-btn">See More</a>
-                   </div>
-              </div>
-          </div>
-
-          <!-- Slider 2 -->
-
-          <!-- Product-Box-->
-          <div class="product-box">
-
-            <!-- Image Container -->
-             <div class="p-img-container">
-                <div class="p-img">
-                    <a href="#">
-                        <img src="../images/eqc_logo.png" class="p-img-front" alt="Front">
-                        <img src="../images/eqc_logo.png" class="p-img-back" alt="Back">
-                    </a>
-                </div>
-             </div>
-
-             <!-- Text -->
-              <div class="p-box-text">
-
-                <!-- Category -->
-                 <div class="product-category">
-                    <span>EQC System</span>
-                 </div>
-
-                 <!-- Title -->
-                  <a href="#" class="product-title">
-                    Machine Bridge is Apps for Supply data from Machine to your dashboard
-                  </a>
-
-                  <!-- Button See -->
-                   <div class="see-more">
-                    <a href="#" class="p-see-btn">See More</a>
-                   </div>
-              </div>
-          </div>
-
-          <!-- Slider 3 -->
-
-          <!-- Product-Box-->
-          <div class="product-box">
-
-            <!-- Image Container -->
-             <div class="p-img-container">
-                <div class="p-img">
-                    <a href="#">
-                        <img src="../images/machine_bridge_logo.png" class="p-img-front" alt="Front">
-                        <img src="../images/eqc_logo.png" class="p-img-back" alt="Back">
-                    </a>
-                </div>
-             </div>
-
-             <!-- Text -->
-              <div class="p-box-text">
-
-                <!-- Category -->
-                 <div class="product-category">
-                    <span>Machine Bridge</span>
-                 </div>
-
-                 <!-- Title -->
-                  <a href="#" class="product-title">
-                    Machine Bridge is Apps for Supply data from Machine to your dashboard
-                  </a>
-
-                  <!-- Button See -->
-                   <div class="see-more">
-                    <a href="#" class="p-see-btn">See More</a>
-                   </div>
-              </div>
-          </div>
-
-          <!-- Product-Box-->
-          <div class="product-box">
-
-            <!-- Image Container -->
-             <div class="p-img-container">
-                <div class="p-img">
-                    <a href="#">
-                        <img src="../images/machine_bridge_logo.png" class="p-img-front" alt="Front">
-                        <img src="../images/eqc_logo.png" class="p-img-back" alt="Back">
-                    </a>
-                </div>
-             </div>
-
-             <!-- Text -->
-              <div class="p-box-text">
-
-                <!-- Category -->
-                 <div class="product-category">
-                    <span>Machine Bridge</span>
-                 </div>
-
-                 <!-- Title -->
-                  <a href="#" class="product-title">
-                    Machine Bridge is Apps for Supply data from Machine to your dashboard
-                  </a>
-
-                  <!-- Button See -->
-                   <div class="see-more">
-                    <a href="#" class="p-see-btn">See More</a>
-                   </div>
-              </div>
-          </div>
-
-          <!-- Product-Box-->
-          <div class="product-box">
-
-            <!-- Image Container -->
-             <div class="p-img-container">
-                <div class="p-img">
-                    <a href="#">
-                        <img src="../images/machine_bridge_logo.png" class="p-img-front" alt="Front">
-                        <img src="../images/eqc_logo.png" class="p-img-back" alt="Back">
-                    </a>
-                </div>
-             </div>
-
-             <!-- Text -->
-              <div class="p-box-text">
-
-                <!-- Category -->
-                 <div class="product-category">
-                    <span>Machine Bridge</span>
-                 </div>
-
-                 <!-- Title -->
-                  <a href="#" class="product-title">
-                    Machine Bridge is Apps for Supply data from Machine to your dashboard
-                  </a>
-
-                  <!-- Button See -->
-                   <div class="see-more">
-                    <a href="#" class="p-see-btn">See More</a>
-                   </div>
-              </div>
-          </div>
-
-          <!-- Product-Box-->
-          <div class="product-box">
-
-            <!-- Image Container -->
-             <div class="p-img-container">
-                <div class="p-img">
-                    <a href="#">
-                        <img src="../images/machine_bridge_logo.png" class="p-img-front" alt="Front">
-                        <img src="../images/eqc_logo.png" class="p-img-back" alt="Back">
-                    </a>
-                </div>
-             </div>
-
-             <!-- Text -->
-              <div class="p-box-text">
-
-                <!-- Category -->
-                 <div class="product-category">
-                    <span>Machine Bridge</span>
-                 </div>
-
-                 <!-- Title -->
-                  <a href="#" class="product-title">
-                    Machine Bridge is Apps for Supply data from Machine to your dashboard
-                  </a>
-
-                  <!-- Button See -->
-                   <div class="see-more">
-                    <a href="#" class="p-see-btn">See More</a>
-                   </div>
-              </div>
-          </div>
-
-          <!-- Product-Box-->
-          <div class="product-box">
-
-            <!-- Image Container -->
-             <div class="p-img-container">
-                <div class="p-img">
-                    <a href="#">
-                        <img src="../images/machine_bridge_logo.png" class="p-img-front" alt="Front">
-                        <img src="../images/eqc_logo.png" class="p-img-back" alt="Back">
-                    </a>
-                </div>
-             </div>
-
-             <!-- Text -->
-              <div class="p-box-text">
-
-                <!-- Category -->
-                 <div class="product-category">
-                    <span>Machine Bridge</span>
-                 </div>
-
-                 <!-- Title -->
-                  <a href="#" class="product-title">
-                    Machine Bridge is Apps for Supply data from Machine to your dashboard
-                  </a>
-
-                  <!-- Button See -->
-                   <div class="see-more">
-                    <a href="#" class="p-see-btn">See More</a>
-                   </div>
-              </div>
-          </div>
-
-        </div>
-
-            
-        </div>
-
-         
-     </section>
-
-     <!--Glider-->
-     <script src="../scripts/glider.min.js"></script>
-
-     <!-- Script Glider -->
-      <script>
-            new Glider(document.querySelector('.glider'), {
-    slidesToScroll: 1,
-    slidesToShow: 4,
-    draggable: true,
-    dots: '.dots',
-    arrows: {
-        prev: '.glider-prev',
-        next: '.glider-next'
-        },
-          responsive: [
-    {
-      // screens greater than >= 775px
-      breakpoint: 1200,
-      settings: {
-        // Set to `auto` and provide item width to adjust to viewport
-        slidesToShow: 4,
-        slidesToScroll: 2,
-        
-      }
-    },{
-      // screens greater than >= 1024px
-      breakpoint: 900,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        
-      }
-    },{
-      // screens greater than >= 1024px
-      breakpoint: 640,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        
-      }
-    },{
-      // screens greater than >= 1024px
-      breakpoint: 0,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        
-      }
-
-    }
-  ]
-
-
-        });
-        </script>
-
-    
+  <script src="../scripts/home.js"></script>
 </body>
 </html>
