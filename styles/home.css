@@ -40,7 +40,7 @@
     --border-radius-circle: 50%;
 
     /* Site Max Width */
-    --site-max-width: 1300px;
+    --site-max-width: 1600px;
 }
 
 /* Styling - for - whole - site */
@@ -95,7 +95,7 @@ header {
 
 header .navbar{
     display: flex;
-    padding: 20px;
+    padding: 20px 10px 20px 10px;
     align-items: center;
     justify-content: space-between;
 }
@@ -152,7 +152,8 @@ header .navbar{
     font-family: Kalam;
     margin-top: 8px;
     max-width: 70%;
-    font-size: 4rem;
+    font-size: 5rem;
+    color: var(--dark-color);
     font-weight: var(--font-weight-semibold);
 }
 
@@ -163,6 +164,7 @@ header .navbar{
 }
 
 .hero-section .hero-details .buttons {
+    padding-top: 50px;
     display: flex;
     gap: 23px;
 }
@@ -270,7 +272,7 @@ header .navbar{
 }
 
 .digitize-section .digitize-list .digitize-item .digitize-image {
-    max-width: 83%;
+    max-width: 50%;
     aspect-ratio: 1;
 }
 
