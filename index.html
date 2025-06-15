@@ -1,189 +1,244 @@
 <!DOCTYPE html>
-<!-- Code by Rama - Mekanika Digital Pratama -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
   <title>Mekanika Digital Pratama</title>
-  <!-- Linking Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <!-- Linking Swiper CSS-->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="styles/home.css">
 </head>
 <body>
-  <!-- Header / Navbar -->
-  <header>
-    <nav class="navbar section-content">
-      <a href="#" class="nav-logo">
-        <h2 class="logo-text">MEKANIKA DIGITAL PRATAMA</h2>
-      </a>
-      <ul class="nav-menu">
-        <button id="menu-close-button" class="fas fa-times"></button>
 
-        <li class="nav-item">
-          <a href="#" class="nav-link">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">About</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">Our Products</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">Industries</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">Contact</a>
-        </li>
-      </ul>
+  <!-- Navbar Header-->
+  <nav>
+    <div class="nav_header">
+      <div class="nav_logo">
+        <a href="#" class="logo">Mekanika Digital Pratama</a>
+      </div>
+        <div class="nav_menu_btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+    </div>
+    <ul class="nav_links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#product">Product</a></li>
+      <li><a href="#correlate">Correlating Industries</a></li>
+      <li><a href="#office">Office</a></li>
+    </ul>
+    <div class="nav_btns">
+      <button class="btn">CONTACT US!</button>
+    </div>
+  </nav>
 
-      <button id="menu-open-button" class="fas fa-bars"></button>
-    </nav>
+  <!-- Header Content -->
+  <header id="home">
+    <div class="header_container">
+      <div class="header_content">
+        <p>PT MEKANIKA DIGITAL PRATAMA</p>
+        <h1>We Digitize Things!</h1>
+        <div class="description_header">
+        Mekanika Digital Pratama has proven its role as a trusted and experienced software and hardware provider both in Indonesia and abroad. This success is inseparable from our perseverance in building and developing
+the industry in Indonesia.
+        </div>
+        <div class="header_btns">
+          <button class="btn">See More</button>
+          <a href="#">
+            <span><i class="ri-play-circle-fill"></i></span>
+          </a>
+        </div>
+      </div>
+      <div class="header_image">
+        <img src="images/logo.png" alt="header">
+      </div>
+    </div>
   </header>
 
-  <main>
-    <!-- Hero Section -->
-    <section class="hero-section">
-      <div class="section-content">
-        <div class="hero-details">
-          <h5 class="title">PT MEKANIKA DIGITAL PRATAMA</h5>
-          <h1 class="subtitle">We Digitize Things!</h1>
-          <p class="description">Mekanika Digital Pratama has proven its role as a trusted and experienced
-          software and hardware provider both in Indonesia and abroad.
-          This success is inseparable from our perseverance in building and developing
-          the industry in Indonesia.</p>
+  <!-- About Company -->
+  <section class="section_container destination_container" id="about">
+    <h2 class="section_header">About MDP</h2>
+    <p class="section_description">
+      Discover the Most Loved Destinations Around the Globe
+    </p>
 
-          <div class="buttons">
-            <a href="#" class="button check-products">Check Product</a>
-            <a href="#" class="button contact-us">Contact Us</a>
+    <div class="destination_grid">
+      <div class="destination_card">
+        <img src="images/background.jpg" alt="destination">
+        <div class="destination_card_details">
+          <div>
+            <h4>Tradition and Futurism</h4>
+            <p>New York City, USA</p>
           </div>
-        </div>
-        <div class="hero-image-wrapper">
-          <img src="images/logo.png" alt="Hero" class="hero-image">
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about-section">
-      <div class="section-content">
-        <div class="about-image-wrapper">
-          <img src="images/up.svg" alt="About" class="about-image">
-        </div>
-        <div class="about-details">
-          <h2 class="section-title">About Mekanika Digital Pratama</h2>
-          <p class="text">Mekanika Digital Pratama has proven its role as a trusted and experienced
-          software and hardware <br>
-          provider both in Indonesia and abroad.
-          This success is inseparable from our perseverance in building and developing
-          the industry in Indonesia.
-        </p>
-        <div class="social-link-list">
-          <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
-        </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Digitize Section -->
-    <section class="digitize-section">
-      <h2 class="section-title">About Work</h2>
-      <div class="section-content">
-        <ul class="digitize-list">
-          <li class="digitize-item">
-            <img src="images/customer-loyalty.png" alt="Loyalty" class="digitize-image">
-            <h3 class="name">Loyalty</h3>
-            <p class="text">We Loyal to All Customers.</p>
-          </li>
-          <li class="digitize-item">
-            <img src="images/power.png" alt="Powerfull Team" class="digitize-image">
-            <h3 class="name">Powerfull Team</h3>
-            <p class="text">We Loyal to All Customers.</p>
-          </li>
-          <li class="digitize-item">
-            <img src="images/dependable.png" alt="Reliable" class="digitize-image">
-            <h3 class="name">Reliable</h3>
-            <p class="text">We Loyal to All Customers.</p>
-          </li>
-          <li class="digitize-item">
-            <img src="images/idea (6).png" alt="Innovation" class="digitize-image">
-            <h3 class="name">Innovation</h3>
-            <p class="text">We Loyal to All Customers.</p>
-          </li>
-          <li class="digitize-item">
-            <img src="images/objective.png" alt="On Target" class="digitize-image">
-            <h3 class="name">On Target</h3>
-            <p class="text">We Loyal to All Customers.</p>
-          </li>
-          <li class="digitize-item">
-            <img src="images/feedback.png" alt="Good Response" class="digitize-image">
-            <h3 class="name">Good Response</h3>
-            <p class="text">We Loyal to All Customers.</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Our Products Section -->
-    <section class="products-section">
-      <h2 class="section-title">Our Products</h2>
-      <div class="section-content">
-        <div class="slider-container swiper">
-          <div class="slider-wrapper">
-            <ul class="our-products-list swiper-wrapper">
-              <li class="our-products swiper-slide">
-                <img src="images/machine_bridge_logo.png" alt="Machine Bridge" class="software-image">
-                <h3 class="name">Machine Bridge</h3>
-                <i class="feedback">Machine Bridge is Apps for Supply data from Machine to your dashboard</i>
-              </li>
-              <li class="our-products swiper-slide">
-                <img src="images/eqc_logo.png" alt="EQC System" class="software-image">
-                <h3 class="name">EQC System</h3>
-                <i class="feedback">Machine Bridge is Apps for Supply data from Machine to your dashboard</i>
-              </li>
-              <li class="our-products swiper-slide">
-                <img src="images/machine_bridge_logo.png" alt="Machine Bridge" class="software-image">
-                <h3 class="name">Checksheet Online</h3>
-                <i class="feedback">Machine Bridge is Apps for Supply data from Machine to your dashboard</i>
-              </li>
-              <li class="our-products swiper-slide">
-                <img src="images/machine_bridge_logo.png" alt="Machine Bridge" class="software-image">
-                <h3 class="name">Tool Management System</h3>
-                <i class="feedback">Machine Bridge is Apps for Supply data from Machine to your dashboard</i>
-              </li>
-              <li class="our-products swiper-slide">
-                <img src="images/machine_bridge_logo.png" alt="Machine Bridge" class="software-image">
-                <h3 class="name">Factory Insight</h3>
-                <i class="feedback">Machine Bridge is Apps for Supply data from Machine to your dashboard</i>
-              </li>
-              <li class="our-products swiper-slide">
-                <img src="images/machine_bridge_logo.png" alt="Machine Bridge" class="software-image">
-                <h3 class="name">Machine Health</h3>
-                <i class="feedback">Machine Bridge is Apps for Supply data from Machine to your dashboard</i>
-              </li>
-              <li class="our-products swiper-slide">
-                <img src="images/machine_bridge_logo.png" alt="Emaintenance" class="software-image">
-                <h3 class="name">E-Maintenance</h3>
-                <i class="feedback">Machine Bridge is Apps for Supply data from Machine to your dashboard</i>
-              </li>
-            </ul>
-
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+          <div class="destination_rating">
+            <span><i class="ri-star-fill"></i></span>
+            4.7
           </div>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+    <div class="destination_grid">
+      <div class="destination_card">
+        <img src="images/background.jpg" alt="destination">
+        <div class="destination_card_details">
+          <div>
+            <h4>The City of Lights</h4>
+            <p>New York City, USA</p>
+          </div>
+          <div class="destination_rating">
+            <span><i class="ri-star-fill"></i></span>
+            4.7
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="destination_grid">
+      <div class="destination_card">
+        <img src="images/background.jpg" alt="destination">
+        <div class="destination_card_details">
+          <div>
+            <h4>Island of the Gods</h4>
+            <p>Bali, Indonesia</p>
+          </div>
+          <div class="destination_rating">
+            <span><i class="ri-star-fill"></i></span>
+            4.7
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- Linking Swiper script -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Digitalization -->
+  <section class="section_container journey_container" id="tour">
+    <h2 class="section_header">Journey To The Sky Made Simple!</h2>
+    <p class="section_description">
+      Effortless Planning for Your Next Adventure
+    </p>
+    <div class="journey_grid">
+      <div class="journey_card">
+        <div class="journey_card_bg">
+          <span><i class="ri-bookmark-fill"></i></span>
+          <h4>Seamless Booking Process</h4>
+        </div>
+         <div class="journey_card_content">
+          <span><i class="ri-bookmark-fill"></i></span>
+          <h4>Seamless Booking Process</h4>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
+        </div>
+      </div>
+       <div class="journey_card">
+        <div class="journey_card_bg">
+          <span><i class="ri-bookmark-fill"></i></span>
+          <h4>Seamless Booking Process</h4>
+        </div>
+         <div class="journey_card_content">
+          <span><i class="ri-bookmark-fill"></i></span>
+          <h4>Seamless Booking Process</h4>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
+        </div>
+      </div>
+       <div class="journey_card">
+        <div class="journey_card_bg">
+          <span><i class="ri-bookmark-fill"></i></span>
+          <h4>Seamless Booking Process</h4>
+        </div>
+         <div class="journey_card_content">
+          <span><i class="ri-bookmark-fill"></i></span>
+          <h4>Seamless Booking Process</h4>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- Linking Custom script -->
+  <section class="section_container showcase_container" id="package">
+    <div class="showcase_image">
+      <img src="images/digitize 1.jpg" alt="showcase">
+    </div>
+    <div class="showcase_content">
+      <h4>UNLEASH WANDERLUST WITH MEKANIKA DIGITAL PRATAMA</h4>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing
+        and typesetting industry. Lorem Ipsum has been the
+        industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled
+        it to make a type specimen book.
+      </p>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing
+        and typesetting industry. Lorem Ipsum has been the
+        industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled
+        it to make a type specimen book.
+      </p>
+      <div class="showcase_btn">
+        <button class="btn">
+          Book A Flight Now
+          <span><i class="ri-arrow-right-line"></i></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section_container banner_container">
+    <div class="banner_card">
+      <h4>10+</h4>
+      <p>Years Experience</p>
+    </div>
+    <div class="banner_card">
+      <h4>12K</h4>
+      <p>Happy Clients</p>
+    </div>
+    <div class="banner_card">
+      <h4>4.8</h4>
+      <p>Overall Ratings</p>
+    </div>
+  </section>
+
+  <!-- Discover -->
+   <section class="section_container discover_container">
+    <h2 class="section_header">Discover The World From Above</h2>
+    <p class="section_description">
+      Experience Breathaking Views and Unique Perspectives
+    </p>
+    <div class="discover_grid">
+      <div class="discover_card">
+        <span><i class="ri-camera-lens-line"></i></span>
+        <h4>Aerial Cityscapes</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      </div>
+      <div class="discover_card">
+        <span><i class="ri-ship-line"></i></span>
+        <h4>Coastal Wonders</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      </div>
+      <div class="discover_card">
+        <span><i class="ri-landscape-ai-line"></i></i></span>
+        <h4>Historic Landmarks</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      </div>
+    </div>
+   </section>
+
+  <!-- Script JS -->
+  <script src="https://unpkg.com/scrollreveal"></script>
   <script src="scripts/home.js"></script>
+  
 </body>
 </html>

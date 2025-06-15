@@ -1,43 +1,66 @@
-const menuOpenButton = document.querySelector("#menu-open-button")
-const menuCloseButton = document.querySelector("#menu-close-button")
+const menuBtn = document.getElementById("menu-btn");
+const navLinks = document.getElementById("nav-links");
+const menuBtnIcon = document.querySelector("i");
 
-menuOpenButton.addEventListener("click", () => {
-  // Toggle mobile menu vibility
-  document.body.classList.toggle("show-mobile-menu");
+menuBtn.addEventListener("click", (e) => {
+  navLinks.classList.toggle("open");
+
+  const isOpen = navLinks.classList.contains("open");
+  menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
 });
 
-// Close menu when the close button is clicked
-menuCloseButton.addEventListener("click", () => menuOpenButton.click());
+navLinks.addEventListener("click", (e) => {
+  navLinks.classList.remove("open");
+  menuBtnIcon.setAttribute("class", "ri-menu-line");
+});
 
+const scrollRevealOption = {
+  origin: "bottom",
+  distance: "50px",
+  duration: 1000,
+};
 
-// Initialize Swiper
-const swiper = new Swiper('.slider-wrapper', {
-  loop: true,
-  spaceBetween: 25,
+ScrollReveal().reveal(".header_image img", {
+  ...scrollRevealOption,
+  origin: "right",
+});
+ScrollReveal().reveal(".header_content p", {
+  ...scrollRevealOption,
+  delay: 500,
+});
+ScrollReveal().reveal(".header_content h1", {
+  ...scrollRevealOption,
+  delay: "1000",
+});
+ScrollReveal().reveal(".header_content .description_header", {
+  ...scrollRevealOption,
+  delay: "1500",
+});
+ScrollReveal().reveal(".header_btns", {
+  ...scrollRevealOption,
+  origin: "1500",
+});
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    dynamicBullets: true,
-  },
+ScrollReveal().reveal(".destination_card", {
+  ...scrollRevealOption,
+  interval: 500,
+});
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+ScrollReveal().reveal(".showcase_image img", {
+  ...scrollRevealOption,
+  origin: left,
+});ScrollReveal().reveal(".showcase_content h4", {
+  ...scrollRevealOption,
+  delay: 500,
+});ScrollReveal().reveal(".showcase_content p", {
+  ...scrollRevealOption,
+  delay: 1000,
+});ScrollReveal().reveal(".showcase_btn", {
+  ...scrollRevealOption,
+  delay: 1500,
+});
 
-  // Responsive breakpoints
-  breakpoints: {
-    0: {
-      slidesPerView: 1
-    },
-    768: {
-      slidesPerView: 2
-    },
-    1024: {
-      slidesPerView: 3
-    },
-  }
+ScrollReveal().reveal(".banner_card", {
+  ...scrollRevealOption,
+  interval: 500,
 });
