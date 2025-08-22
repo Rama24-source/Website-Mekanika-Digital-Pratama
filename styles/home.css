@@ -298,6 +298,8 @@ header::before {
     overflow: hidden;
 }
 
+
+
 .journey_card_bg {
     padding: 2rem;
     background-color: var(--extra-light);
@@ -308,7 +310,7 @@ header::before {
 .journey_card_bg span {
     display: inline-block;
     margin-bottom: 4rem;
-    font-size: 1.75rem;
+    font-size: 2rem;
     color: var(--primary-color);
 }
 
@@ -341,7 +343,7 @@ header::before {
     display: inline-block;
     margin-bottom: 1rem;
     padding: 7px 9px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: var(--white);
     border: 2px solid var(--white);
     border-radius: 100px;
