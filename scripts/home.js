@@ -2,6 +2,7 @@ const menuBtn = document.getElementById("menu-btn");
 const navLinks = document.getElementById("nav-links");
 const menuBtnIcon = document.querySelector("i");
 
+
 menuBtn.addEventListener("click", (e) => {
   navLinks.classList.toggle("open");
 
@@ -69,9 +70,3 @@ ScrollReveal().reveal(".discover_card", {
   ...scrollRevealOption,
   interval: 500,
 });
-
-const swiper = new Swiper(".swiper", {
-  slidesPerView: 3,
-  spaceBetween: 20,
-  loop: true
-})

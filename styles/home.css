@@ -483,76 +483,51 @@ header::before {
     color: var(--text-light);
 }
 
-.swiper {
-    margin-top: 4rem;
-    width: 100%;
+.clients {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 10%;
+  flex-wrap: wrap;
 }
 
-.swiper_slide {
-    min-width: 375px;
+.clients-title {
+  flex: 1;
+  min-width: 250px;
 }
 
-
-
-.client_card {
-    padding: 5px;
-    background-color: var(--extra-light);
-    border-radius: 1rem;
-    transition: 0.3s;
+.clients-title h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
-.client_card:hover {
-    background-color: var(--primary-color);
+.clients-title p {
+  font-size: 28px;
+  font-weight: 600;
+  color: #aaa;
 }
 
-.client_content {
-    padding: 1rem;
-    background-color: var(--white);
-    border-radius: calc(1rem - 5px);
+.clients-logos {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 40px;
+  justify-items: center;
+  align-items: center;
 }
 
-.client_rating {
-    margin-bottom: 1rem;
-    color: var(--primary-color);
+.clients-logos img {
+  max-width: 120px;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-.client_content p {
-    color: var(--text-dark);
+.clients-logos img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
 }
 
-.client_details {
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.client_details img {
-    max-width: 50px;
-    border-radius: 100%;
-}
-
-.client_details h4 {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--text-dark);
-    transition: 0.3s;
-}
-
-.client_card:hover h4 {
-    color: var(--white);
-}
-
-.client_details h5 {
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--text-light);
-    transition: 0.3s;
-}
-
-.client_card:hover h5 {
-    color: var(--extra-light);
-}
 
 footer {
     background-color: var(--extra-light);
@@ -677,6 +652,11 @@ footer {
   color: #6a1b9a;
 }
 
+@media (max-width: 480px) {
+  .multiple-items {
+    gap: 5px;
+  }
+}
 
 @media (width > 540px) {
     .destination_grid {
@@ -835,6 +815,10 @@ footer {
         grid-template-columns: repeat(3, 1fr);
     }
 
+    .multiple-items {
+        gap: 10px;
+    }
+
     .footer_container {
         grid-template-columns: 2fr 1fr 1fr 1.5fr;
     }
@@ -851,5 +835,9 @@ footer {
 
     .destination_grid {
         gap: 2rem;
+    }
+
+    .multiple-items {
+        gap: 15px;
     }
 }
