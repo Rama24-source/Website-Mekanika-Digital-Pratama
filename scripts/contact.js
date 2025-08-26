@@ -2,24 +2,6 @@ const menuBtn = document.getElementById("menu-btn");
 const navLinks = document.getElementById("nav-links");
 const menuBtnIcon = document.querySelector("i");
 
-document.addEventListener("DOMContentLoaded", () => {
-  const seeMoreBtn = document.querySelector(".nav_btns");
-  if (seeMoreBtn) {
-    seeMoreBtn.addEventListener("click", () => {
-      window.location.href = "pages/contact.html";
-    });
-  }
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  const seeMoreBtn = document.querySelector(".header_btns .btn");
-  if (seeMoreBtn) {
-    seeMoreBtn.addEventListener("click", () => {
-      window.location.href = "pages/contact.html";
-    });
-  }
-});
-
 
 menuBtn.addEventListener("click", (e) => {
   navLinks.classList.toggle("open");
@@ -87,4 +69,41 @@ ScrollReveal().reveal(".banner_card", {
 ScrollReveal().reveal(".discover_card", {
   ...scrollRevealOption,
   interval: 500,
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contactForm");
+  const formMessage = document.getElementById("formMessage");
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const subject = document.getElementById("subject").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (name && email && subject && message) {
+      formMessage.style.color = "green";
+      formMessage.textContent = "✅ Message sent successfully!";
+      form.reset();
+    } else {
+      formMessage.style.color = "red";
+      formMessage.textContent = "⚠️ Please fill in all fields!";
+    }
+  });
+});
+
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const name = this.name.value;
+  const email = this.email.value;
+  const message = this.message.value;
+
+  console.log("Name:", name);
+  console.log("Email:", email);
+  console.log("Message:", message);
+
+  alert("Form submitted! (dummy)");
 });
